@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        All product| Digital-bazzar.com
+    </title>
+    <link rel="icon" href="../img/LOGO.jpg">
+    <link rel="stylesheet" href=" ../product details.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="../img/IMG-20201230-WA0014.jpg" width="100">
+                </div>
+                <nav>
+                    <ul id="menuitems">
+                        <li><a href="../home.html"><i class="fa fa-home"></i>Home</a></li>
+                        <li><a href="../option.html"><i class="fa fa-product-hunt"></i>Product</a></li>
+                        <li><a href=""><i class="fa fa-question-circle"></i>About</a></li>
+                        <li><a href="../home detail pages/contact us.html"><i class="fa fa-address-book"></i>Contact</a></li>
+                        <li id="btn_account"><a href="" onclick="handleSubMenu(event)"><i class="fa fa-book"
+                                    aria-hidden="true"></i>Account</a>
+                            <div class="sub-menu" id="sub_menu">
+
+                                <ul>
+                                    <li><a href="../home detail pages/login page.html">Login</a> </li>
+                                    <li><a href="../home detail pages/sign-up page.html">Signup</a> </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <input type="text" name="saerch" id="search" placeholder="search the Product">
+                    </ul>
+                </nav>
+                <img src="../img/cart.png" width="30px" height="30px">
+                <img src="../img/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- single product detail page -->
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-4">
+                <img src="../img/smart band 1.jpg">
+                <img src="../img/smart band 2.jpg">
+                <img src="../img/smart band 3.jpg">
+                <img src="../img/smart band 4.jpg">
+                
+                <div class="small-img-row">
+                </div>
+            </div>
+            <div class="col-1">
+
+                <h1>MI smart band 4
+                </h1>
+                <h4> INR 2,299</h4>
+                <input type="number" value="1" id="input_quantity" min="1">
+                <a href="" class="btn">Add to cart</a>
+                <a href="" class="btn">Buy Now</a>
+                <br>
+                <h4>
+                    About the product <i class="fa fa-indent"></i>
+                </h4>
+                <br>
+                <p>Brand-
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MI<br>Connection-
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wireless
+                    (Bluetooth)<BR>Supported Application-&nbsp;&nbsp;&nbsp;Phone<br> Brand
+                    Colour-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;White/Black/Orange<br>Headphone
+                    From Factor-&nbsp;&nbsp;&nbsp;In
+                    Ear<br>Connections-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NFC<br>Voice
+                    Command-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Touch Screen</p>
+                <h4>About This item</h4><br>
+                <p>
+                    -Battery Life: 135mAh battery capacity built in the<br>&nbsp;Mi Band 4, max working time up to 20 days after a<br> &nbsp;full charging.<br>
+                    <br>
+                    -Health Monitoring: Support heart rate monitoring, heart<br>&nbsp;rate alerts, sleep monitoring, idle alerts;<br> &nbsp;Monitoring your health data o matain your healthier body.<br>
+                    <br>
+                    -Activity Tracking: Comes with 6 workout modes: Treadmill,<br>&nbsp;exercise, outdoor running, cycling,walking, swimming Counting step,<br>&nbsp;distance, calories burned during sports.<br>
+                    <br>
+                    -5ATM Water Resistant: Up to 50 meters water resistant rate,<br>&nbsp;freely to wear Mi Band 4 when running and exercising.<br>
+                    <br>
+                   -Display: 0. 95-inch Colorful AMOLED display with 120 x 240 pixels<br>&nbsp;resolution, up to 450 nits screen brightness.<br>
+                   <br>
+
+                </p>
+            
+            </div>
+        </div>
+    </div>
+
+    <!-- <footer></footer> -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <img src="../img/play-store.png">
+                </div>
+
+                <div class="footer-col-2">
+                    <h3>Usefull Links</h3>
+                    <ul>
+
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>join Us</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>FOLLOW US</h3>
+                    <ul>
+
+                        <a href="https://www.instagram.com/?hl=en" target="blank">INSTAGRAM</a>
+                        <li>TWITTER</li>
+                        <a href="https://www.facebook.com/mobileprotection?source=mobile_mirror_nu"
+                            target="blank">FACEBOOK</a>
+                        <li>YOUTUBE</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"><i class="fa fa-copyright"></i>Copyright 2020 - The Digital Store</p>
+        </div>
+
+    </div>
+    <!-- js for toggle menu -->
+    <script>
+        var menuitems = document.getElementById("menuitems");
+        menuitems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (menuitems.style.maxHeight == "0px") {
+                menuitems.style.maxHeight = "200px"
+            }
+            else {
+                menuitems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <script>
+
+        var isSubmenuOpen = false
+        var btn_account = document.getElementById('btn_account')
+        var sub_menu_el = document.getElementById('sub_menu')
+
+        function handleSubMenu(event) {
+            event.preventDefault();
+            if (!isSubmenuOpen) {
+                sub_menu_el.style.display = "block"
+                isSubmenuOpen = true
+            } else {
+                sub_menu_el.style.display = "none"
+                isSubmenuOpen = false
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    realme watch detail| Digital-bazzar.com
+    </title>
+    <link rel="icon" href="../img/LOGO.jpg">
+    <link rel="stylesheet" href=" ../product details.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="../img/IMG-20201230-WA0014.jpg" width="100">
+                </div>
+                <nav>
+                    <ul id="menuitems">
+                        <li><a href="../home.html"><i class="fa fa-home"></i>Home</a></li>
+                        <li><a href="../option.html"><i class="fa fa-product-hunt"></i>Product</a></li>
+                        <li><a href=""><i class="fa fa-question-circle"></i>About</a></li>
+                        <li><a href="../home detail pages/contact us.html"><i class="fa fa-address-book"></i>Contact</a></li>
+                        <li id="btn_account"><a href="" onclick="handleSubMenu(event)"><i class="fa fa-book"
+                                    aria-hidden="true"></i>Account</a>
+                            <div class="sub-menu" id="sub_menu">
+
+                                <ul>
+                                    <li><a href="../home detail pages/login page.html">Login</a> </li>
+                                    <li><a href="../home detail pages/sign-up page.html">Signup</a> </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <input type="text" name="saerch" id="search" placeholder="search the Product">
+                    </ul>
+                </nav>
+                <img src="../img/cart.png" width="30px" height="30px">
+                <img src="../img/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- single product detail page -->
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-4">
+                <img src="../img/realme watch.jpg">
+                <img src="../img/realme watch 3.jpg">
+               
+                <img src="../img/realme watch 2.jpg">
+            
+                
+                <div class="small-img-row">
+                </div>
+            </div>
+            <div class="col-1">
+
+                <h1>Realme Watch
+                </h1>
+                <h4> INR 3,999</h4>
+                <input type="number" value="1" id="input_quantity" min="1">
+                <a href="realme watch cart.html" class="btn">Add to cart</a>
+                <a href="realme watch checkout.html" class="btn">Buy Now</a>
+                <br>
+                <h4>
+                    About the product <i class="fa fa-indent"></i>
+                </h4>
+                <br>
+                <p>Brand-
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Realme<br>Connection-
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wireless<br> Brand
+                    Colour-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Black<br>
+                   
+                   
+                <h4>About This item</h4><br>
+                <p>
+                    -3.5 cm (1.4 inch) Large Color Touch Screen<br>
+                    <br>
+                    -Real Time Heart Rate Monitor | Blood Oxygen <br>Level Monitor (SpO2) | Intelligent Activity Tracker <br>(14 Sports Modes) | IP68 Water Resistant<br>
+                    <br>
+                    -Smart Notifications for SMS, Calls, WhatsApp, and Other Apps<br>
+                    <br>
+                    -Upto 9 Day Battery Life<br>
+                    <br>
+                    -Smart Connect - Control Your Phone Camera and Music from Your Watch<br>
+                    <br>
+                    -Realme Link App - Get All Your Fitness Data on Your Phone Seamlessly<br> (Only for Android)<br>
+                    <br>
+                    -Touchscreen<br>
+                    <br>
+                   -Fitness & Outdoor<br>
+                    <br>
+                   -Battery Runtime: Upto 9 days<br>
+                <br>
+                   -Made in India<br>
+
+                </p>
+            
+            </div>
+        </div>
+    </div>
+
+    <!-- <footer></footer> -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <img src="../img/play-store.png">
+                </div>
+
+                <div class="footer-col-2">
+                    <h3>Usefull Links</h3>
+                    <ul>
+
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>join Us</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>FOLLOW US</h3>
+                    <ul>
+
+                        <a href="https://www.instagram.com/?hl=en" target="blank">INSTAGRAM</a>
+                        <li>TWITTER</li>
+                        <a href="https://www.facebook.com/mobileprotection?source=mobile_mirror_nu"
+                            target="blank">FACEBOOK</a>
+                        <li>YOUTUBE</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"><i class="fa fa-copyright"></i>Copyright 2020 - The Digital Store</p>
+        </div>
+
+    </div>
+    <!-- js for toggle menu -->
+    <script>
+        var menuitems = document.getElementById("menuitems");
+        menuitems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (menuitems.style.maxHeight == "0px") {
+                menuitems.style.maxHeight = "200px"
+            }
+            else {
+                menuitems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <script>
+
+        var isSubmenuOpen = false
+        var btn_account = document.getElementById('btn_account')
+        var sub_menu_el = document.getElementById('sub_menu')
+
+        function handleSubMenu(event) {
+            event.preventDefault();
+            if (!isSubmenuOpen) {
+                sub_menu_el.style.display = "block"
+                isSubmenuOpen = true
+            } else {
+                sub_menu_el.style.display = "none"
+                isSubmenuOpen = false
+            }
+        }
+    </script>
+
+</body>
+
+</html>
